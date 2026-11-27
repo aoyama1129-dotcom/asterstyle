@@ -1,0 +1,5 @@
+/* Quiet editorial credits and clear landing position below sticky navigation. */
+.editorial-home #latest{scroll-margin-top:88px}
+.editorial-story-copy .editorial-byline,.editorial-story-list .editorial-byline{display:block;margin:7px 0 0;font-size:12px;line-height:1.65;font-weight:400;letter-spacing:.035em;color:#646864}
+.editorial-story-list .editorial-byline{margin:0 0 8px}
+@media(max-width:780px){.editorial-home #latest{scroll-margin-top:110px}.editorial-story-copy .editorial-byline,.editorial-story-list .editorial-byline{font-size:11px}}
