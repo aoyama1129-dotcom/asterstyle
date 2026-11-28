@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;600;700&display=swap');
+/* Aso editorial typography for Maizuru. Scope: the two Maizuru article pages only. */
+:root{--paper:#fff;--ink:#252525;--muted:#666;--gold:#777;--editorial-sans:'Noto Sans JP','Hiragino Kaku Gothic ProN',sans-serif}
+body{background:#fff;color:#252525;font-family:var(--editorial-sans)}
+.site-top .brand{font-family:var(--editorial-sans);font-weight:600}
+.story-nav a.active{color:#fff;border-bottom:1px solid #b0b0b0}
+.hero{display:block;min-height:0;background:#fff;color:#252525;text-align:left;overflow:visible;padding:0}
+.hero:before{display:none}
+.hero-inner{max-width:850px;width:100%;margin:auto;padding:70px 30px 48px}
+.hero .kicker{font:500 11px/1.8 var(--editorial-sans);letter-spacing:.06em;color:#666;margin:0 0 13px;overflow-wrap:anywhere}
+.hero h1{font-family:var(--editorial-sans);font-weight:700;font-size:clamp(34px,4vw,54px);line-height:1.55;letter-spacing:.015em;color:#191919;margin:0 0 12px;word-break:normal;overflow-wrap:anywhere}
+.hero h1 span{display:inline}
+.hero h1 span+span:before{display:none}
+.maizuru-author-credit{margin:4px 0 27px;font-family:var(--editorial-sans);font-size:13px;font-weight:500;letter-spacing:.12em;color:#5e625d;line-height:1.9}
+.maizuru-author-credit .author-divider{color:#b0b3ad;margin:0 .22em}
+.hero .editorial-dek{font-size:17px;line-height:1.98;color:#444;margin:0 0 26px}
+.editorial-byline{display:flex;flex-wrap:wrap;gap:16px 30px;border-top:1px solid #dedede;padding-top:16px}
+.editorial-byline span,.editorial-byline strong{display:block;font:11px/1.8 Arial,Helvetica,sans-serif;letter-spacing:.07em}
+.editorial-byline span{color:#777}.editorial-byline strong{font-weight:600;color:#222}
+.maizuru-editorial-prologue{background:#fff;padding:36px 28px 44px}
+.maizuru-prologue-grid{max-width:1060px;gap:clamp(24px,4vw,60px)}
+.maizuru-prologue-photo img{height:auto;aspect-ratio:auto;object-fit:contain}
+.maizuru-prologue-copy h2{font-size:clamp(24px,3vw,38px);font-weight:700;line-height:1.65;letter-spacing:.005em;margin:0 0 23px}
+.maizuru-prologue-copy>p:not(.maizuru-prologue-kicker){font-size:17px;line-height:2.12;letter-spacing:0;color:#252525}
+.maizuru-prologue-kicker{color:#666;letter-spacing:.12em}
+.maizuru-article-guide{padding:28px 24px 40px}
+.guide-lines strong{font-weight:500;letter-spacing:0}
+.text-block{max-width:750px;padding:0 30px 24px}
+.text-block p{font-family:var(--editorial-sans);font-size:17px;line-height:2.12;letter-spacing:0;font-weight:400;color:#252525;margin:0 0 30px}
+.text-block .lead{font-family:var(--editorial-sans);font-size:19px;line-height:2.06;font-weight:500;letter-spacing:0;color:#242424}
+.text-block h2,.text-block h3{font-family:var(--editorial-sans);font-weight:700;letter-spacing:.005em;font-size:26px;line-height:1.7;color:#191919;margin:70px 0 26px}
+.text-block h2:after{display:none}
+.text-block h3{font-size:22px;margin:24px 0 23px}
+.chapter-label{color:#666;letter-spacing:.1em}
+.photo-spread{padding:26px 0 30px}
+.photo-spread img,.photo-spread-slim img{width:min(890px,100%);height:auto;object-fit:contain;box-shadow:none}
+.photo-spread figcaption{max-width:890px;color:#666;letter-spacing:.02em;font-size:11px}
+.film-section{background:#f8f8f8}
+.film-head h2,.maizuru-next-inner h2,.ending .thought{font-family:var(--editorial-sans);letter-spacing:.015em;font-weight:600}
+.film-rule{background:#888}
+.maizuru-next-story{background:#f8f8f8;color:#252525}
+.maizuru-next-inner>p{color:#666}
+.maizuru-next-inner a{border-color:#777}
+.credits-at-end{max-width:750px;color:#666;letter-spacing:.025em}
+html[lang="en"] .hero h1,html[lang="en"] .text-block h2,html[lang="en"] .text-block h3{letter-spacing:-.01em}
+html[lang="en"] .hero h1{line-height:1.33}
+@media(max-width:800px){
+ .hero-inner{padding:42px 23px 32px}
+ .hero h1{font-size:30px;line-height:1.61}
+ .maizuru-author-credit{font-size:12px;letter-spacing:.08em;margin:4px 0 21px}
+ .hero .editorial-dek{font-size:15px;line-height:2.05}
+ .editorial-byline{gap:12px;justify-content:space-between}
+ .editorial-byline span,.editorial-byline strong{font-size:9px}
+ .maizuru-editorial-prologue{padding:0 0 32px}
+ .maizuru-prologue-grid{grid-template-columns:1fr;gap:26px}
+ .maizuru-prologue-copy{padding:0 23px}
+ .maizuru-prologue-copy h2{font-size:24px;line-height:1.65;margin-bottom:22px}
+ .maizuru-prologue-copy>p:not(.maizuru-prologue-kicker){font-size:16px;line-height:2.09}
+ .maizuru-prologue-photo img{width:100%;height:auto;aspect-ratio:auto}
+ .maizuru-article-guide{padding:24px 23px 28px}
+ .text-block{padding:0 23px 20px}
+ .text-block p{font-size:16px;line-height:2.09;letter-spacing:0;margin-bottom:28px}
+ .text-block .lead{font-size:17px;line-height:2.04}
+ .text-block h2{font-size:22px;line-height:1.65;margin:56px 0 23px}
+ .text-block h3{font-size:20px;line-height:1.65;margin:20px 0 23px}
+ .photo-spread{padding:18px 0 24px}
+ .photo-spread img,.photo-spread-slim img{width:100%;max-width:100%;box-shadow:none}
+ .photo-spread figcaption{padding:0 23px;font-size:10px}
+ .maizuru-next-story{padding:55px 23px}
+ html[lang="en"] .hero h1{font-size:clamp(28px,8vw,35px)}
+}
+@media(max-width:360px){.hero h1{font-size:26px}.hero-inner,.text-block{padding-left:20px;padding-right:20px}}
